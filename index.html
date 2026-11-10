@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Sports Cafe — Momos, Noodles, Mojitos & Live Matches</title>
+  <meta name="description" content="The Sports Cafe: momos, noodles, fries, mojitos, fresh juices and tea, with the match on the big screen.">
+  <meta name="theme-color" content="#111412">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23111412'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23FFC62E' stroke-width='2.5'/%3E%3Cpath d='M7 16h18M16 7c-3 3-3 15 0 18M16 7c3 3 3 15 0 18' fill='none' stroke='%23FFC62E' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="top">
+    <div class="wrap nav__inner">
+      <a class="brand" href="#top" aria-label="The Sports Cafe — home">
+        <svg class="brand__ball" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="12"/><path d="M4 16h24M16 4c-4.5 4-4.5 20 0 24M16 4c4.5 4 4.5 20 0 24"/></svg>
+        <span>The Sports Cafe</span>
+      </a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-links">
+        <span class="sr-only">Menu</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path class="i-open" d="M4 7h16M4 12h16M4 17h16"/><path class="i-close" d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <nav id="nav-links" class="nav__links" aria-label="Main">
+        <a href="#menu">Menu</a>
+        <a href="#game-nights">Game nights</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#visit">Visit</a>
+        <a class="btn btn--primary btn--sm" href="tel:[PHONE]">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+          Call to order
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero__bg"
+           src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=1600&q=75"
+           srcset="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=800&q=70 800w,
+                   https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=1600&q=75 1600w,
+                   https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=2400&q=75 2400w"
+           sizes="100vw" width="1600" height="1067" alt="Steamed momos in a bamboo basket" fetchpriority="high">
+      <div class="wrap hero__inner">
+        <p class="eyebrow eyebrow--live"><span class="live-dot" aria-hidden="true"></span> Kitchen open · Match on</p>
+        <h1 id="hero-title" class="hero__title">Good food.<br><span>Great games.</span></h1>
+        <p class="lead hero__lead">Hot momos, wok-tossed noodles, loaded fries, ice-cold mojitos, fresh juices and proper chai — with the match on the big screen.</p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#menu">See the menu</a>
+          <a class="btn btn--ghost" href="#visit">Find us</a>
+        </div>
+      </div>
+      <div class="hero__score" aria-hidden="true">
+        <span class="hero__score-k">Today's line-up</span>
+        <span class="hero__score-v">Momos <b>vs</b> Noodles</span>
+      </div>
+    </section>
+
+    <!-- ============ TICKER ============ -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span>Steamed momos</span><i>★</i><span>Hakka noodles</span><i>★</i><span>Peri-peri fries</span><i>★</i><span>Virgin mojito</span><i>★</i><span>Fresh orange juice</span><i>★</i><span>Masala chai</span><i>★</i><span>Tandoori momos</span><i>★</i><span>Iced lemon tea</span><i>★</i>
+        <span>Steamed momos</span><i>★</i><span>Hakka noodles</span><i>★</i><span>Peri-peri fries</span><i>★</i><span>Virgin mojito</span><i>★</i><span>Fresh orange juice</span><i>★</i><span>Masala chai</span><i>★</i><span>Tandoori momos</span><i>★</i><span>Iced lemon tea</span><i>★</i>
+      </div>
+    </div>
+
+    <!-- ============ MENU ============ -->
+    <section class="section section--light" id="menu" aria-labelledby="menu-title">
+      <div class="wrap">
+        <div class="section__head">
+          <div>
+            <p class="eyebrow">The menu</p>
+            <h2 id="menu-title" class="h2">Pick your team</h2>
+          </div>
+          <p class="section__note">Made fresh when you order. Tags show <span class="tag tag--veg">Veg</span> and <span class="tag tag--nonveg">Non-veg</span>.</p>
+        </div>
+
+        <div class="tabs" role="tablist" aria-label="Menu categories">
+          <button role="tab" id="tab-momos" aria-controls="panel-momos" aria-selected="true">Momos</button>
+          <button role="tab" id="tab-noodles" aria-controls="panel-noodles" aria-selected="false" tabindex="-1">Noodles</button>
+          <button role="tab" id="tab-fries" aria-controls="panel-fries" aria-selected="false" tabindex="-1">Fries &amp; snacks</button>
+          <button role="tab" id="tab-mojitos" aria-controls="panel-mojitos" aria-selected="false" tabindex="-1">Mojitos</button>
+          <button role="tab" id="tab-juices" aria-controls="panel-juices" aria-selected="false" tabindex="-1">Juices</button>
+          <button role="tab" id="tab-tea" aria-controls="panel-tea" aria-selected="false" tabindex="-1">Tea</button>
+        </div>
+
+        <!-- Prices are placeholders: replace ₹— with real prices -->
+        <div class="panel" role="tabpanel" id="panel-momos" aria-labelledby="tab-momos" tabindex="0">
+          <article class="dish">
+            <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=640&h=480&q=70" width="640" height="480" loading="lazy" alt="Plates of steamed momos with greens">
+            <div class="dish__body"><h3 class="dish__name">Steamed momos</h3><p>Soft dumplings, juicy filling, fiery red chutney on the side.</p><div class="dish__meta"><span class="tag tag--veg">Veg</span><span class="tag tag--nonveg">Chicken</span><span class="price">₹—</span></div></div>
+          </article>
+          <article class="dish">
+            <img src="https://images.unsplash.com/photo-1625220194771-7ebdea0b70b9?auto=format&fit=crop&w=640&h=480&q=70" width="640" height="480" loading="lazy" alt="Tandoori and fried momos on a black plate">
+            <div class="dish__body"><h3 class="dish__name">Tandoori momos</h3><p>Marinated in spiced yoghurt and charred till smoky.</p><div class="dish__meta"><span class="tag tag--veg">Veg</span><span class="tag tag--nonveg">Chicken</span><span class="price">₹—</span></div></div>
+          </article>
+          <article class="dish">
+            <img src="https://images.unsplash.com/photo-1496116218417-1a781b1c416c?auto=format&fit=crop&w=640&h=480&q=70" width="640" height="480" loading="lazy" alt="Pan-fried dumplings in a wooden bowl with chopsticks">
+            <div class="dish__body"><h3 class="dish__name">Fried momos</h3><p>Golden and crisp outside, tender inside. Built for sharing.</p><div class="dish__meta"><span class="tag tag--veg">Veg</span><span class="tag tag--nonveg">Chicken</span><span class="price">₹—</span></div></div>
+          </article>
+        </div>
+
+        <div class="panel" role="tabpanel" id="panel-noodles" aria-labelledby="tab-noodles" tabindex="0" hidden>
+          <article class="dish">
+            <img src="https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?auto=format&fit=crop&w=640&h=480&q=70" width="640" height="480" loading="lazy" alt="Chilli noodles in a black bowl">
+            <div class="dish__body"><h3 class="dish__name">Chilli garlic noodles</h3><p>Wok-tossed with garlic, chilli and spring onion.</p><div class="dish__meta"><span class="tag tag--veg">Veg</span><span class="price">₹—</span></div></div>
+          </article>
+          <article class="dish">
+            <img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=640&h=480&q=70" width="640" height="480" loading="lazy" alt="Hakka noodles on a wooden plate with chopsticks">
+            <div class="dish__body"><h3 class="dish__name">Hakka noodles</h3><p>The classic. Crunchy veggies, soy, a hit of pepper.</p><div class="dish__meta"><span class="tag tag--veg">Veg</span><span class="tag tag--nonveg">Chicken</span><span class="price">₹—</span></div></div>
+          </article>
+          <article class="dish">
+            <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=640&h=480&q=70" width="640" height="480" loading="lazy" alt="Ramen bowl with egg and prawns">
+            <div class="dish__body"><h3 class="dish__name">Noodle soup bowl</h3><p>Hot broth, slurpy noodles and a soft-boiled egg.</p><div class="dish__meta"><span class="tag tag--nonveg">Egg</span><span class="price">₹—</span></div></div>
+          </article>
+        </div>
+
+        <div class="panel" role="tabpanel" id="panel-fries" aria-labelledby="tab-fries" tabindex="0" hidden>
+          <article class="dish">
+            <img src="https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?auto=format&fit=crop&w=640&h=480&q=70" width="640" height="480" loading="lazy" alt="Salted fries in a wire basket">
+            <div class="dish__body"><h3 class="dish__name">Salted fries</h3><p>Thin, crisp and properly salted.</p><div class="dish__meta"><span class="tag tag--veg">Veg</span><span class="price">₹—</span></div></div>
+          </article>
+          <article class="dish">
+            <img src="https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&w=640&h=480&q=70" width="640" height="480" loading="lazy" alt="Spiced fries on a dark plate">
+            <div class="dish__body"><h3 class="dish__name">Peri-peri fries</h3><p>Tossed in our peri-peri spice. Have a drink ready.</p><div class="dish__meta"><span class="tag tag--veg">Veg</span><span class="price">₹—</span></div></div>
+          </article>
+          <article class="dish">
+            <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=640&h=480&q=70" width="640" height="480" loading="lazy" alt="Loaded cheesy fries in a basket">
+            <div class="dish__body"><h3 class="dish__name">Loaded cheese fries</h3><p>Melted cheese, herbs, more cheese.</p><div class="dish__meta"><span class="tag tag--veg">Veg</span><span class="price">₹—</span></div></div>
+          </article>
+        </div>
+
+        <div class="panel" role="tabpanel" id="panel-mojitos" aria-labelledby="tab-mojitos" tabindex="0" hidden>
+          <article class="dish">
+            <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=640&h=480&q=70" width="640" height="480" loading="lazy" alt="Mint and lime mojito in a tall glass">
+            <div class="dish__body"><h3 class="dish__name">Classic virgin mojito</h3><p>Fresh mint, lime, soda, crushed ice.</p><div class="dish__meta"><span class="tag tag--veg">Mocktail</span><span class="price">₹—</span></div></div>
+          </article>
+          <article class="dish">
+            <img src="https://images.unsplash.com/photo-1551538827-9c037cb4f32a?auto=format&fit=crop&w=640&h=480&q=70" width="640" height="480" loading="lazy" alt="Soda being poured into a lime mojito">
+            <div class="dish__body"><h3 class="dish__name">Green apple mojito</h3><p>Tart apple, mint and a fizzy finish.</p><div class="dish__meta"><span class="tag tag--veg">Mocktail</span><span class="price">₹—</span></div></div>
+          </article>
+          <article class="dish">
+            <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=640&h=480&q=70" width="640" height="480" loading="lazy" alt="Three colourful mojitos on a bar counter">
+            <div class="dish__body"><h3 class="dish__name">Berry blast mojito</h3><p>Mixed berries muddled with mint and lime.</p><div class="dish__meta"><span class="tag tag--veg">Mocktail</span><span class="price">₹—</span></div></div>
+          </article>
+        </div>
+
+        <div class="panel" role="tabpanel" id="panel-juices" aria-labelledby="tab-juices" tabindex="0" hidden>
+          <article class="dish">
+            <img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&w=640&h=480&q=70" width="640" height="480" loading="lazy" alt="Glass of orange juice with a straw">
+            <div class="dish__body"><h3 class="dish__name">Fresh orange</h3><p>Squeezed to order. Nothing added.</p><div class="dish__meta"><span class="tag tag--veg">Fresh</span><span class="price">₹—</span></div></div>
+          </article>
+          <article class="dish">
+            <img src="https://images.unsplash.com/photo-1622597467836-f3285f2131b8?auto=format&fit=crop&w=640&h=480&q=70" width="640" height="480" loading="lazy" alt="Jars of colourful fresh juices">
+            <div class="dish__body"><h3 class="dish__name">Seasonal fruit juice</h3><p>Whatever's best at the market this week.</p><div class="dish__meta"><span class="tag tag--veg">Fresh</span><span class="price">₹—</span></div></div>
+          </article>
+          <article class="dish">
+            <img src="https://images.unsplash.com/photo-1613478223719-2ab802602423?auto=format&fit=crop&w=640&h=480&q=70" width="640" height="480" loading="lazy" alt="Citrus juice with sliced oranges">
+            <div class="dish__body"><h3 class="dish__name">Mosambi juice</h3><p>Sweet lime, cool and refreshing.</p><div class="dish__meta"><span class="tag tag--veg">Fresh</span><span class="price">₹—</span></div></div>
+          </article>
+        </div>
+
+        <div class="panel" role="tabpanel" id="panel-tea" aria-labelledby="tab-tea" tabindex="0" hidden>
+          <article class="dish">
+            <img src="https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?auto=format&fit=crop&w=640&h=480&q=70" width="640" height="480" loading="lazy" alt="Cup of milky tea beside a teapot">
+            <div class="dish__body"><h3 class="dish__name">Masala chai</h3><p>Ginger, cardamom, slow-boiled with milk.</p><div class="dish__meta"><span class="tag tag--veg">Hot</span><span class="price">₹—</span></div></div>
+          </article>
+          <article class="dish">
+            <img src="https://images.unsplash.com/photo-1571934811356-5cc061b6821f?auto=format&fit=crop&w=640&h=480&q=70" width="640" height="480" loading="lazy" alt="Bowl of dark tea with spices">
+            <div class="dish__body"><h3 class="dish__name">Lemon ginger tea</h3><p>No milk, all warmth.</p><div class="dish__meta"><span class="tag tag--veg">Hot</span><span class="price">₹—</span></div></div>
+          </article>
+          <article class="dish">
+            <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=640&h=480&q=70" width="640" height="480" loading="lazy" alt="Iced lemon tea with lime">
+            <div class="dish__body"><h3 class="dish__name">Iced lemon tea</h3><p>Brewed strong, poured over ice, a squeeze of lime.</p><div class="dish__meta"><span class="tag tag--veg">Cold</span><span class="price">₹—</span></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GAME NIGHTS ============ -->
+    <section class="section section--dark" id="game-nights" aria-labelledby="games-title">
+      <div class="wrap games">
+        <div class="games__media">
+          <img class="games__img games__img--a" src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=900&h=700&q=70" width="900" height="700" loading="lazy" alt="Packed football stadium under floodlights">
+          <img class="games__img games__img--b" src="https://images.unsplash.com/photo-1575037614876-c38a4d44f5b8?auto=format&fit=crop&w=700&h=700&q=70" width="700" height="700" loading="lazy" alt="Friends raising glasses together at a table">
+        </div>
+        <div class="games__copy">
+          <p class="eyebrow eyebrow--on-dark">Game nights</p>
+          <h2 id="games-title" class="h2">Come for the match.<br>Stay for the momos.</h2>
+          <p class="lead">Cricket, football, whatever's on — we put it on the big screen and keep the plates coming.</p>
+          <ul class="checks">
+            <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg><span><b>Big screens</b> so you never miss a ball.</span></li>
+            <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg><span><b>Bring the squad.</b> Tables for groups — call ahead on match days.</span></li>
+            <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/></svg><span><b>Half-time quick bites</b> — fries and momos out fast.</span></li>
+          </ul>
+          <a class="btn btn--primary" href="tel:[PHONE]">Book a table</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section class="section section--light" id="gallery" aria-labelledby="gallery-title">
+      <div class="wrap">
+        <div class="section__head">
+          <div>
+            <p class="eyebrow">Highlights reel</p>
+            <h2 id="gallery-title" class="h2">What's on the table</h2>
+          </div>
+          <a class="link" href="[INSTAGRAM_URL]">More on Instagram →</a>
+        </div>
+        <div class="gallery">
+          <img class="g1" src="https://images.unsplash.com/photo-1617093727343-374698b1b08d?auto=format&fit=crop&w=900&h=900&q=70" width="900" height="900" loading="lazy" alt="Creamy noodle soup topped with herbs">
+          <img class="g2" src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=700&h=500&q=70" width="700" height="500" loading="lazy" alt="Row of mojitos on a bar counter">
+          <img class="g3" src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=700&h=500&q=70" width="700" height="500" loading="lazy" alt="Momos spread across several plates">
+          <img class="g4" src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=700&h=500&q=70" width="700" height="500" loading="lazy" alt="Cheesy fries in a newspaper-lined basket">
+          <img class="g5" src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=700&h=500&q=70" width="700" height="500" loading="lazy" alt="Warmly lit cafe counter and stools">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VISIT ============ -->
+    <section class="section section--dark" id="visit" aria-labelledby="visit-title">
+      <div class="wrap visit">
+        <div>
+          <p class="eyebrow eyebrow--on-dark">Visit us</p>
+          <h2 id="visit-title" class="h2">Pull up a chair</h2>
+          <dl class="facts">
+            <div><dt>Address</dt><dd>[ADDRESS LINE 1]<br>[AREA, CITY, PIN]</dd></div>
+            <div><dt>Hours</dt><dd>[Mon–Fri: 00:00 – 00:00]<br>[Sat–Sun: 00:00 – 00:00]</dd></div>
+            <div><dt>Call</dt><dd><a class="link" href="tel:[PHONE]">[PHONE]</a></dd></div>
+          </dl>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="[GOOGLE_MAPS_URL]">Get directions</a>
+            <a class="btn btn--ghost" href="tel:[PHONE]">Call us</a>
+          </div>
+        </div>
+        <div class="map" role="img" aria-label="Map placeholder — add a Google Maps embed for the cafe address">
+          <svg viewBox="0 0 400 300" aria-hidden="true">
+            <rect width="400" height="300" fill="none"/>
+            <rect x="20" y="20" width="360" height="260" rx="8"/>
+            <path d="M20 150h360M200 20v260M70 150v130"/>
+            <circle cx="200" cy="150" r="46"/>
+            <path d="M20 95h70M330 95v55M290 205h90"/>
+          </svg>
+          <span class="map__pin"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg> The Sports Cafe</span>
+          <span class="map__note">Map embed goes here</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <a class="brand" href="#top">
+        <svg class="brand__ball" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="12"/><path d="M4 16h24M16 4c-4.5 4-4.5 20 0 24M16 4c4.5 4 4.5 20 0 24"/></svg>
+        <span>The Sports Cafe</span>
+      </a>
+      <nav class="footer__links" aria-label="Footer">
+        <a href="#menu">Menu</a><a href="#game-nights">Game nights</a><a href="#visit">Visit</a><a href="[INSTAGRAM_URL]">Instagram</a>
+      </nav>
+      <p class="footer__small">© <span id="year">2026</span> The Sports Cafe · Photos from <a href="https://unsplash.com" class="link">Unsplash</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
